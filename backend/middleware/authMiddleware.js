@@ -27,6 +27,4 @@ export const protect = expressAsyncHandler(async (req, res, next) => {
     res.status(401)
     throw new Error('Not authorized, nop token')
   }
-
-  next()
 })
